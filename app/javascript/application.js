@@ -5,7 +5,7 @@ import "jquery"
 import "semantic-ui"
 
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
   $('.message .close')
     .on('click', function() {
       $(this)
