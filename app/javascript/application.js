@@ -4,6 +4,11 @@ import "controllers"
 import "jquery" 
 import "semantic-ui"
 
+export const scroll_bottom = function() {
+  if ($('#messages_container').length > 0) {
+    $('#messages_container').scrollTop($('#messages_container')[0].scrollHeight)
+  }
+}
 
 $(document).on('turbo:load', function() {
   $('.message .close')
@@ -12,6 +17,7 @@ $(document).on('turbo:load', function() {
         .closest('.message')
         .transition('fade')
       ;
-    })
-  ;
+    });
+    scroll_bottom();
 })
+import "channels"

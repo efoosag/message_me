@@ -3,3 +3,8 @@
 .chatpage {
   height: 450px;
 }
+
+#messages_container {
+  height: 15em;
+  overflow: auto;
+}
